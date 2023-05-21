@@ -1,5 +1,6 @@
 package com.iuc.projet1;
 
+import org.example.Calculatrice;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
