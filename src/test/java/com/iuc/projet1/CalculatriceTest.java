@@ -2,18 +2,35 @@ package com.iuc.projet1;
 
 import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class CalculatriceTest {
 
+    private double x;
+    private double y;
+    private double r;
+    private int number;
+
     @BeforeAll
     public void setUp() {
-
+        x=100*Math.random();
+        y=50*Math.random();
+        number=(int)(1000*Math.random());
     }
 
     @Test
     @Order(1)
     public void addition() {
-
+        System.out.println("===== TEST ADDITION =====");
+        r = x + y;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("r = " + r);
+        // addition(2,4) == 6
+        Calculatrice cal = new Calculatrice(x,y);
+        // 2, 4, 6
+        assertEquals(r, cal.addition());
     }
 
     @Test
