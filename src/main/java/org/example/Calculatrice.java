@@ -13,4 +13,8 @@ public class Calculatrice {
     public double addition() {
         return this.x + this.y;
     };
+
+    public double soustraction() {
+        return this.x - this.y;
+    }
 }
