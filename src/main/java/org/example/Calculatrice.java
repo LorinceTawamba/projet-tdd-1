@@ -11,6 +11,6 @@ public class Calculatrice {
     }
 
     public double addition() {
-        return 25;
+        return this.x + this.y;
     };
 }

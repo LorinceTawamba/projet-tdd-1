@@ -13,8 +13,8 @@ public class CalculatriceTest {
     private double r;
     private int number;
 
-    @BeforeAll
-    public void setUp() {
+    @BeforeEach
+    void setUp() {
         x=100*Math.random();
         y=50*Math.random();
         number=(int)(1000*Math.random());
