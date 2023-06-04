@@ -37,7 +37,15 @@ public class CalculatriceTest {
     @Test
     @Order(2)
     public void soustraction() {
-
+        System.out.println("===== TEST SOUSTRACTION =====");
+        r = x - y;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("r = " + r);
+        // addition(53,8) == 45
+        Calculatrice cal = new Calculatrice(x,y);
+        // 53, 8, 45
+        assertEquals(r, cal.soustraction());
     }
 
     @Test
